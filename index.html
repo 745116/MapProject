@@ -1,23 +1,30 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title> Hello World </title>
-        <meta name = "viewport" content="initial-scale=1.0, user-scalable=no">
-        <meta charshet = "utf-8">
-        <style> html, body, #map_canvas{height:100%; margin: 0px; padding: opx}</style>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=API_kEY"></script>
-        <script>
-        var map;
-        function initialize()
-        {
-            var mapOptions={zoom:12,
-                center:new google.maps.LatLng(40.758904, -73.985128)
+<head>
+    <title> hello</title>>
+</title>
+<meta name="viewport" content="inoitial-scale1.0, user-scalable=no">
+<meta charset = "utf-8">
+<style> html, body, #map_canvas{ height:100%; margin: 0px; padding: 0px}</style>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC2iMNCaicZETUzGMZXTx6zGci-AwQ1KN8"></script>
+<script>
+    var map;
+    function initialize(){
+        var mapOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(40.758904, -73.985128)
             };
-            map= new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+            map= new google.maps.Map(document.getElementById('map_canvas'),
+             mapOptions);
         }
-        google.maps.event.addDomiListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'load', initialize);
         </script>
-    </head>
-    <body>
-        <div id="map_canvas"></div>
-    </body>
+        </head>
+    }
+
+
+<body>
+    <div id="map_canvas"></div>
+</body>
+
 </html>
